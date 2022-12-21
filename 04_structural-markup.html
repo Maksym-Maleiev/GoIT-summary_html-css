@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural markup</title>
+    <link rel="stylesheet" href="./css/04_structural-markup.css" />
+  </head>
+  <body>
+    <a href="./main.html">Back to main</a>
+
+    <h1>Structural markup</h1>
+
+    <h2>Streaming content</h2>
+
+    <h3>
+      Tag <em><code>&#60;header&#62;</code></em>
+    </h3>
+    <!-- Example -->
+
+    <!-- Page header -->
+    <header>
+      <a href="/">Site logo</a>
+
+      <ul>
+        Navigation menu for other pages
+      </ul>
+    </header>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h3>
+      Tag <em><code>&#60;footer&#62;</code></em>
+    </h3>
+    <!-- Example -->
+
+    <!-- Page header -->
+    <header>
+      <a href="/">Site logo</a>
+
+      <ul>
+        Navigation menu for other pages
+      </ul>
+    </header>
+
+    <!-- Page footer -->
+    <footer>
+      <!-- Copyright -->
+      <p>All right reserved &copy;lpj.dev</p>
+
+      <!-- Social links -->
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+    </footer>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/sections.html#the-footer-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h3>
+      Tag <em><code>&#60;main&#62;</code></em>
+    </h3>
+    <!-- Page header -->
+    <header></header>
+
+    <!-- Unique page content -->
+    <main></main>
+
+    <!-- Page footer -->
+    <footer></footer>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h2>Semantic section</h2>
+
+    <h3>
+      Tag <em><code>&#60;nav&#62;</code></em>
+    </h3>
+    <!-- Example -->
+    <header>
+      <a href="/">Site logo</a>
+
+      <nav>
+        <!-- Navigation to other page -->
+        <ul>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Uniqua page content -->
+    <main></main>
+
+    <!-- Page footer -->
+    <footer>
+      <!-- ⚠️ Social links, not "nav" -->
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+    </footer>
+
+    <!-- Link to specification -->
+    <a href="https://html.spec.whatwg.org/multipage/sections.html#the-nav-element" target="_blank"
+      >Link to specification</a
+    >
+
+    <h3>
+      Tag <em><code>&#60;article&#62;</code></em>
+    </h3>
+    <!-- Example -->
+    <article>
+      <h1>Mince pie</h1>
+      <img src="./img/mince-pie.jpg" alt="mince pie" width="480" />
+      <p>Delicious baked pie with various fillings: cherry, peach, plum or strawberry.</p>
+      <p>Cost: 50 loans</p>
+    </article>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h3>
+      Tag <em><code>&#60;section&#62;</code></em>
+    </h3>
+    <!-- Example -->
+    <section>
+      <h1>Most popular cakes of the week</h1>
+
+      <!-- Inside each <li> can be a pie-card from the "Tag <article>" section -->
+      <ul>
+        <li>Fried with mushrooms</li>
+        <li>Fried with meat</li>
+        <li>Fried with apples</li>
+        <li>Fried with cottage cheese</li>
+      </ul>
+    </section>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h3>
+      Tag <em><code>&#60;div&#62;</code></em>
+    </h3>
+
+    <!-- Link to specification -->
+    <a
+      href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+      target="_blank"
+      >Link to specification</a
+    >
+
+    <h2>Tag selection algorithm</h2>
+    <img src="./img/algorithm.jpeg" alt="HTML algorithm" width="720" />
+
+    <h2>Page markup</h2>
+    <!-- Example -->
+
+    <!-- Page header -->
+    <header>
+      <!-- The logo is always a link -->
+      <a href="/">
+        <img
+          src="https://www.flaticon.com/svg/static/icons/svg/616/616475.svg"
+          alt="Webstudio logo"
+          width="32"
+        />
+        Mango.dev
+      </a>
+
+      <!-- Main navigation -->
+      <nav>
+        <!-- Links to other pages or section of the current page -->
+        <ul>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Unique page content -->
+    <main>
+      <!-- Features section -->
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>
+            <img src="./img/office.jpg" alt="Workplace in the company" width="320" />
+            <h3>Experience</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat unde aspernatur,
+              nostrum voluptate voluptatum odit dolorum ratione labore fugiat qui.
+            </p>
+          </li>
+          <li>
+            <img src="./img/man.jpg" alt="A man holds a tablet in his hands and drinks coffee" width="320" />
+            <h3>Technology stack</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat unde aspernatur,
+              nostrum voluptate voluptatum odit dolorum ratione labore fugiat qui.
+            </p>
+          </li>
+          <li>
+            <img src="./img/paper.jpg" alt="Four hands in a gesture of mutual assistance" width="320" />
+            <h3>Support</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat unde aspernatur,
+              nostrum voluptate voluptatum odit dolorum ratione labore fugiat qui.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technology stack section -->
+      <section>
+        <h2>Our technology stack</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Page Footer -->
+    <footer>
+      <p>All rights reserved &copy;mango.dev</p>
+
+      <p>Our contacts in social networks</p>
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+
+      <button type="button">Request a call back</button>
+    </footer>
+  </body>
+</html>
