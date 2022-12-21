@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <a href="./main.html">Back to main</a>
+
+    <h1>Validation</h1>
+
+    <!-- Link to validator -->
+    <a href="https://validator.w3.org/nu/" target="_blank">Check your code with validator</a>
+
+    <!-- Example -->
+    <section>
+        <!-- ❌ Error: The closing order of the tags i not respected. -->
+        <p><a href="squoosh.app">Squoosh - service <em></a>for optimization</p> images.</em>
+
+        <!-- ❌ Error: The specific rules for nesting tags are not respected. -->
+        <ul>
+            <p>Features</p>
+            <li>Works in the browser</li>
+            <li>Dose not load the system</li>
+            <li>Convenient interface</li>
+        </ul>
+    </section>
+
+        <section>
+            <h2>✅ Right exsample</h2>
+            <p>
+                <a href="https://squoosh.app/">Squoosh</a> - service <em>for optimization</em> images.
+            </p>
+        
+            <p>Features</p>
+            <ul>
+                <li>Works in the browser</li>
+                <li>Dose not load the system</li>
+                <li>Convenient interface</li>
+            </ul>
+        </section>
+</body>
+</html>
