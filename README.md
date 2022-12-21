@@ -5,4 +5,4 @@
 ### 3. Images
 ### 4. Structural markup
 ### 5. Validation
-### 6. Devtools
+### 6. Devtool
