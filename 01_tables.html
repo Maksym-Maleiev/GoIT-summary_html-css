@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="./css/01_tables.css" />
+  </head>
+  <body>
+    <a href="./main.html">Back to main</a>
+
+    <h1>Tables</h1>
+
+    <!-- Example -->
+    <table>
+      <tr>
+        <td>433</td>
+        <td>London - Paris</td>
+        <td>5 hours</td>
+      </tr>
+      <tr>
+        <td>701</td>
+        <td>New York - Chicago</td>
+        <td>7 hours</td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Oslo - Warsaw</td>
+        <td>4 hours</td>
+      </tr>
+    </table>
+
+    <h2>Header cells</h2>
+
+    <!-- Example -->
+    <table>
+      <tr>
+        <th>Train number</th>
+        <th>Route</th>
+        <th>Travel time</th>
+      </tr>
+      <tr>
+        <td>433</td>
+        <td>London - Paris</td>
+        <td>5 hours</td>
+      </tr>
+      <tr>
+        <td>701</td>
+        <td>New York - Chicago</td>
+        <td>7 hours</td>
+      </tr>
+      <tr>
+        <td>258</td>
+        <td>Oslo - Warsaw</td>
+        <td>4 hours</td>
+      </tr>
+    </table>
+
+    <h2>Section of table</h2>
+
+    <!-- Example -->
+    <table>
+      <thead>
+        <tr>
+          <th>Train number</th>
+          <th>Route</th>
+          <th>Travel time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>433</td>
+          <td>London - Paris</td>
+          <td>5 hours</td>
+        </tr>
+        <tr>
+          <td>701</td>
+          <td>New York - Chicago</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>Oslo - Warsaw</td>
+          <td>4 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Header of table</h2>
+
+    <!-- Example-1 -->
+    <h1>Train schedule</h1>
+    <table>
+      <!-- Table markup -->
+    </table>
+
+    <!-- Example-2 -->
+    <table>
+      <caption>
+        Train shedule
+      </caption>
+
+      <!-- Other table markup -->
+    </table>
+
+    <!-- Example-3 -->
+    <table>
+      <caption>
+        Train shedule
+      </caption>
+      <thead>
+        <tr>
+          <th>Train number</th>
+          <th>Route</th>
+          <th>Travel time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>433</td>
+          <td>London - Paris</td>
+          <td>5 hours</td>
+        </tr>
+        <tr>
+          <td>701</td>
+          <td>New York - Chicago</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>Oslo - Warsaw</td>
+          <td>4 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Grouping cells</h2>
+
+    <!-- Example -->
+    <table>
+      <thead>
+        <tr>
+          <th>Cloud service</th>
+          <th>Statistics</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Users</th>
+          <th>Visits</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Google</td>
+          <td>12000</td>
+          <td>307000</td>
+          <td>1000 Tb</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>9000</td>
+          <td>200500</td>
+          <td>800 Tb</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Use rowspan and colspan -->
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Cloude service</th>
+          <th colspan="3">Statistics</th>
+        </tr>
+        <tr>
+          <th>Users</th>
+          <th>Visits</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Google</td>
+          <td>12000</td>
+          <td>307000</td>
+          <td>1000 Tb</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>9000</td>
+          <td>200500</td>
+          <td>800 Tb</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
