@@ -1,1 +1,1 @@
-# GoIT-summary_html-css
+# 02-HTML_part-2
