@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tags and attributes</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <a href="./main.html">Back to main</a>
+
+      <ul>
+        <li><a href="#title-1">Tags</a><br /></li>
+        <li><a href="#title-2">Commentary</a></li>
+        <li><a href="#title-3">Attributes</a></li>
+        <li><a href="#title-4">Paired tags</a></li>
+        <li><a href="#title-5">Singles tags</a></li>
+        <li><a href="#title-6">Tag nesting</a></li>
+        <li><a href="#title-7">Specification HTML</a></li>
+      </ul>
+    </header>
+
     <main>
-        <a href="./main.html">Back to main</a>
+      <h1>Tags and attributes</h1>
+      <!-- Tags and attributes navigation -->
 
-        <h1>Tags and attributes</h1>
+      <!-- Tags -->
+      <h2 id="title-1">Tags</h2>
+      <!-- Example -->
+      <section>Section</section>
+      <p>Paragraph</p>
+      <a href="">Link</a>
+      <button>Button</button>
 
-        <!-- Tags and attributes navigation -->
-        <a href="#title-1">Tags</a><br>
-        <a href="#title-2">Commentary</a><br>
-        <a href="#title-3">Attributes</a><br>
-        <a href="#title-4">Paired tags</a><br>
-        <a href="#title-5">Singles tags</a><br>
-        <a href="#title-6">Tag nesting</a><br>
-        <a href="#title-7">Specification HTML</a>
+      <h2 id="title-2">Commentary</h2>
+      <!-- This is a comment, you don't see his on the page -->
+      <p>This is a text of paragraph, you will be see his on the page</p>
 
-        <!-- Tags -->
-        <h2 id="title-1">Tags</h2>
-        <!-- Example -->
-        <section>Section</section>
-        <p>Paragraph</p>
-        <a href="">Link</a>
-        <button>Button</button>
-
-        <h2 id="title-2">Commentary</h2>
-        <!-- This is a comment, you don't see his on the page -->
-        <p>This is a text of paragraph, you will be see his on the page</p>
-
-        <!-- 
+      <!-- 
             A commentary will be a multiline.
             It is convenient for more capacious descriptions.
         -->
 
-        <!-- Attributes -->
-        <h2 id="title-3">Attributes</h2>
-        <a href="https://www.google.com/" class="link">Google</a>
-        <img src="./img/cute-cat.jpg" alt="cute cat">
-        <input type="text" name="user_name">
-        <button type="submit">Button</button>
-        <p class="text">Text</p>
+      <!-- Attributes -->
+      <h2 id="title-3">Attributes</h2>
+      <a href="https://www.google.com/" class="link">Google</a>
+      <img src="./img/cute-cat.jpg" alt="cute cat" />
+      <input type="text" name="user_name" />
+      <button type="submit">Button</button>
+      <p class="text">Text</p>
 
-        <a href="https://www.google.com/" target="_blank" title="Google search engine">Google.com</a>
+      <a href="https://www.google.com/" target="_blank" title="Google search engine">Google.com</a>
 
-        <img src="https://picsum.photos/640/480" alt="Some image">
+      <img src="https://picsum.photos/640/480" alt="Some image" />
 
-        <!-- Paired tags -->
-        <h2 id="title-4">Paired tags</h2>
-        <!-- Article with title and pardgraph -->
-        <article>
-            <h3>About paired tags</h3>
-            <p>Many tags are paired. Them content is between opened and closed tag.</p>
-        </article>
+      <!-- Paired tags -->
+      <h2 id="title-4">Paired tags</h2>
+      <!-- Article with title and pardgraph -->
+      <article>
+        <h3>About paired tags</h3>
+        <p>Many tags are paired. Them content is between opened and closed tag.</p>
+      </article>
 
-        <!-- Singles tags -->
-        <h2 id="title-5">Singles tags</h2>
-        <!-- Meta information about coding -->
-        <code>
-            &#60;meta charset="utf-8"&#62;
-        </code>
-        <!-- Entry field -->
-        <input type="text">
-        <!-- Image -->
-        <img src="./img/cute-cat.jpg" alt="cool cat">
+      <!-- Singles tags -->
+      <h2 id="title-5">Singles tags</h2>
+      <!-- Meta information about coding -->
+      <p>&#60;meta charset="utf-8"&#62;</p>
+      <!-- Entry field -->
+      <input type="text" />
+      <!-- Image -->
+      <img src="./img/cute-cat.jpg" alt="cool cat" />
 
-        <!-- Tag nesting -->
-        <h2 id="title-6">Tag nesting</h2>
-        <p>
-            <a href=squoosh.app">Squoosh</a> - images <em>optimization</em> service.
-        </p>
+      <!-- Tag nesting -->
+      <h2 id="title-6">Tag nesting</h2>
 
-        <p>Features</p>
-        <ul>
-            <li>Works in the browser</li>
-            <li>Does not load the system</li>
-            <li>Convenient interface</li>
-        </ul>
+      <!-- Example -->
+      <p><a href="https://squoosh.app">Squoosh</a> - images <em>optimization</em> service.</p>
 
-        <!-- Specification HTML -->
-        <h2 id="title-7">Specification HTML</h2>
-        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="HTML Living Standard">HTML Living Standard</a>
+      <p>Features</p>
+      <ul>
+        <li>Works in the browser</li>
+        <li>Does not load the system</li>
+        <li>Convenient interface</li>
+      </ul>
 
-        <a name="title-7"></a>
-        <h3>
-            Reference books
-        </h3>
-        <ul>
-            <li>
-                <a href="https://htmlreference.io/" target="_blank" title="HTML-tags">Reference book HTML-tags</a>
-            </li>
-            <li>
-                <a href="https://cssreference.io/" target="_blank" title="CSS-proprrties">Reference book CSS-proprrties</a>
-            </li>
-        </ul>
+      <!-- Specification HTML -->
+      <h2 id="title-7">Specification HTML</h2>
+      <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="HTML Living Standard"
+        >HTML Living Standard</a
+      >
+
+      <a name="title-7"></a>
+      <h3>Reference books</h3>
+      <ul>
+        <li>
+          <a href="https://htmlreference.io/" target="_blank" title="HTML-tags"
+            >Reference book HTML-tags</a
+          >
+        </li>
+        <li>
+          <a href="https://cssreference.io/" target="_blank" title="CSS-proprrties"
+            >Reference book CSS-proprrties</a
+          >
+        </li>
+      </ul>
     </main>
-</body>
+  </body>
 </html>
