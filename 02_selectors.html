@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./css/02_selectors.css" />
+  </head>
+  <body>
+    <a href="./main.html">Back to main</a>
+
+    <h1>Selectors</h1>
+    <a
+      href="https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048"
+      target="_blank"
+      rel="noreferrer noopener nofollow"
+      >Selector examples</a
+    >
+
+    <img
+      src="./images/css-selectors.png"
+      alt="css selectors rule"
+      width="480"
+    />
+
+    <h2>Element selector (tag)</h2>
+    <!-- Example -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+      distinctio exercitationem optio nihil ratione ea culpa alias velit rem
+      sapiente?
+    </p>
+    <a href="https://google.com">Lorem ipsum dolor sit amet.</a>
+
+    <h2>Class selector</h2>
+    <p><strong>USE!!!</strong> in a future.</p>
+
+    <ul>
+      <li>
+        <a
+          href="https://github.com/yoksel/common-words"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >directory</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/web-standards-ru/dictionary/blob/main/dictionary.md"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >glossary of terms</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/nicothin/idiomatic-pre-CSS/blob/gh-pages/words_and_abbreviations.md"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >cuts</a
+        >
+      </li>
+    </ul>
+
+    <!-- Example -->
+    <h1 class="title">Hello, I'm Mango.</h1>
+    <p class="text">
+      Welcome to my personal page. Here you can see
+      <a class="link" href="https://google.com">projects</a>.
+    </p>
+
+    <h2>Class composition</h2>
+
+    <img
+      src="./images/class-composition.png"
+      alt="class composition rule"
+      width="480"
+    />
+
+    <!-- Example -->
+    <p class="alert success">Account registration success</p>
+    <p class="alert warning">Attention, tariffs will be changed</p>
+    <p class="alert error">Transaction error</p>
+
+    <h2>ID selector</h2>
+
+    <!-- Example -->
+    <h1 id="title">Page title</h1>
+
+    <h2>Descendant selector</h2>
+
+    <!-- Example -->
+    <a href="/">Read our blog!</a>
+
+    <ul class="social-links">
+      <li>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >Twitter</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >Facebook</a
+        >
+      </li>
+    </ul>
+
+    <h2>Child selector</h2>
+
+    <!-- Example -->
+    <ul class="menu">
+      <li>
+        Computers and accessories
+        <ul class="submenu">
+          <li>Processors</li>
+          <li>Monitors</li>
+          <li>Video cards</li>
+        </ul>
+      </li>
+      <li>
+        Appliances
+        <ul class="submenu">
+          <li>Refrigerators</li>
+          <li>TVs</li>
+          <li>Washing machines</li>
+        </ul>
+      </li>
+      <li>
+        Household products
+        <ul class="submenu">
+          <li>armchairs</li>
+          <li>Матрасы</li>
+          <li>Electric fireplaces</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Attribute selector</h2>
+
+    <h3>element[attribute]</h3>
+
+    <!-- Example -->
+    <a href="https://htmlreference.io" title="Tag Reference">
+      htmlreference.io
+    </a>
+
+    <a href="https://cssreference.io" title="Styles Reference">
+      cssreference.io
+    </a>
+
+    <a href="https://www.youtube.com">YouTube </a>
+
+    <h3>element[attribute="value"]</h3>
+
+    <!-- Example -->
+    <a href="https://google.com" title="Google"> google.com </a>
+
+    <a href="https://microsoft.com" title="Microsoft"> microsoft.com </a>
+
+    <a href="https://twitter.com" title="Twitter">Twitter </a>
+  </body>
+</html>
