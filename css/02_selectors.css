@@ -1,0 +1,126 @@
+/* Applies to all paragraphs on the page */
+
+p {
+  font-size: 24px;
+}
+
+/* Applies to all links on the page */
+a {
+  text-decoration: none;
+}
+
+/* ------------------------------------------ */
+
+/* Class selectors */
+
+/* Applies to all tags with "title" class */
+.title {
+  font-weight: 500;
+}
+
+/* Applies to all tags with "text" class */
+.text {
+  color: brown;
+  font-size: 18px;
+}
+
+/* Applies to all tags with "link" class */
+.link {
+  text-decoration: none;
+  color: green;
+}
+
+/* ------------------------------------------ */
+
+/* Class composition */
+
+/* Common styles for all alert types */
+.alert {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Specific styles for each type */
+.success {
+  color: green;
+}
+
+.warning {
+  color: orange;
+}
+
+.error {
+  color: red;
+}
+
+/* ------------------------------------------ */
+
+/* ID selector */
+
+#title {
+  font-weight: 700;
+  color: blue;
+}
+
+/* ------------------------------------------ */
+
+/* Descendant selector */
+
+/* ❌ Applies to all links on the page */
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* ✅ Applies only to links, which lie inside the tag with the "social-links" class */
+
+.social-links a {
+  color: aqua;
+  text-decoration-line: underline;
+}
+
+/* ------------------------------------------ */
+
+/* Child selector */
+
+/* ❌ Doesn't solve the problem */
+
+/* .menu li {
+  border: 1px solid tomato;
+} */
+
+/* ✅ Exactly what is needed */
+
+.menu > li {
+  border: 1px solid tomato;
+}
+
+/* ------------------------------------------ */
+
+/* Attribute selector */
+
+/* element[attribute] */
+
+a[title] {
+  color: teal;
+}
+
+/* element[attribute="value"] */
+
+/* Unusual curly braces formatting is normal */
+
+a[href="https://google.com"]
+{
+  color: greenyellow;
+}
+
+a[href="https://microsoft.com"]
+{
+  color: firebrick;
+}
+
+a[href="https://twitter.com"]
+{
+  color: yellow;
+}
