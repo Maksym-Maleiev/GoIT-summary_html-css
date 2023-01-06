@@ -1,0 +1,6 @@
+/* Example + */
+/* All links will be red. */
+a {
+  color: red;
+  font-size: 24px;
+}
