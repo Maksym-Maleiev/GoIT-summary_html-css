@@ -1,1 +1,1 @@
-# GoIT-summary_html-css
+# Selectors and colors
