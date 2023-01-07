@@ -1,0 +1,72 @@
+/* Text color */
+
+.text {
+  color: tomato;
+}
+
+/* ------------------------------------ */
+
+/* Background-color */
+
+.text {
+  background-color: tomato;
+  color: white;
+}
+
+/* ------------------------------------ */
+
+/* Named colors */
+
+p {
+  color: tomato;
+}
+
+/* ------------------------------------ */
+
+/* RGB */
+
+/* Red color: 255 red, 0 green, 0 blue */
+p {
+  color: rgb(255, 0, 0);
+}
+
+/* Red color: 100% red, 0% green, 0% blue */
+
+p {
+  color: rgb(100%, 0%, 0%);
+}
+
+/* ------------------------------------ */
+
+/* Hexadecimal */
+
+/* Red color: ff (100%) red, 00 (0%) green, 00 (0%) blue */
+p {
+  color: #ff0000;
+}
+
+/* Green color: 00 (0%) red, ff (100%) green, 00 (0%) blue */
+p {
+  color: #00ff00;
+}
+
+/* Blue color: 00 (0%) red, 00 (0%) green, ff (100%) blue */
+p {
+  color: #0000ff;
+}
+
+/* ------------------------------------ */
+
+/* Color transparency */
+
+/* Red color with 30% transparency */
+
+p {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Red color with 30% transparency */
+
+p {
+  background-color: rgba(100%, 0%, 0%, 30%);
+}
