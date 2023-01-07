@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="./css/main-styles.css" />
+    <link rel="stylesheet" href="./css/03_pseudo-classes.css" />
+  </head>
+  <body>
+    <a href="./main.html">Back to main</a>
+
+    <h1>Pseudo-classes</h1>
+
+    <h2>Pseudo-class <code>:hover</code></h2>
+
+    <!-- Example-1 -->
+    <p>
+      An excellent cheat sheet by tags can be found
+      <a class="link" href="https://htmlreference.io" target="_blank"
+        >by link</a
+      >
+    </p>
+
+    <!-- Example-2 -->
+    <ul class="social-links">
+      <li><a href="https://twitter.com" class="link">Twitter</a></li>
+      <li><a href="https://www.instagram.com" class="link">Instagram</a></li>
+      <li><a href="https://www.facebook.com" class="link">Facebook</a></li>
+    </ul>
+
+    <h2>Pseudo-class <code>:focus</code></h2>
+
+    <!-- Example -->
+    <ul class="social-links">
+      <li><a href="https://twitter.com" class="link">Twitter</a></li>
+      <li>
+        <a href="https://www.instagram.com" class="link">Instagram</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com" class="link">Facebook</a>
+      </li>
+    </ul>
+
+    <h2>Pseudo-class <code>:active</code></h2>
+
+    <!-- Example -->
+    <ul class="social-links">
+      <li><a class="link" href="https://twitter.com">Twitter</a></li>
+      <li>
+        <a class="link" href="https://www.instagram.com">Instagram</a>
+      </li>
+      <li>
+        <a class="link" href="https://www.facebook.com">Facebook</a>
+      </li>
+    </ul>
+
+    <h2>Pseudo-class <code>:visited</code></h2>
+
+    <!-- Example -->
+    <ul class="social-links">
+      <li>
+        <a class="link" href="https://twitter.com" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <a class="link" href="https://www.instagram.com" target="_blank"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a class="link" href="https://www.facebook.com" target="_blank"
+          >Facebook</a
+        >
+      </li>
+    </ul>
+
+    <h2>Hover and tables</h2>
+
+    <!-- Example -->
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Route</th>
+          <th>Travel time</th>
+        </tr>
+      </thead>
+
+      <tbody class="schedule-body">
+        <tr>
+          <td>433</td>
+          <td>Kyiv - Kovel</td>
+          <td>5 hours</td>
+        </tr>
+        <tr>
+          <td>701</td>
+          <td>Kharkiv - Dnipro</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>Lviv - Odessa</td>
+          <td>4 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2><code>cursor</code> property</h2>
+
+    <!-- Example -->
+
+    <h3><code class="accent-title">cursor</code> property values</h3>
+
+    <div class="cursors">
+      <div class="auto">auto</div>
+      <div class="default">default</div>
+      <div class="none">none</div>
+      <div class="context-menu">context-menu</div>
+      <div class="help">help</div>
+      <div class="pointer">pointer</div>
+      <div class="progress">progress</div>
+      <div class="wait">wait</div>
+      <div class="cell">cell</div>
+      <div class="crosshair">crosshair</div>
+      <div class="text">text</div>
+      <div class="vertical-text">vertical-text</div>
+      <div class="alias">alias</div>
+      <div class="copy">copy</div>
+      <div class="move">move</div>
+      <div class="no-drop">no-drop</div>
+      <div class="not-allowed">not-allowed</div>
+      <div class="all-scroll">all-scroll</div>
+      <div class="col-resize">col-resize</div>
+      <div class="row-resize">row-resize</div>
+      <div class="n-resize">n-resize</div>
+      <div class="s-resize">s-resize</div>
+      <div class="e-resize">e-resize</div>
+      <div class="w-resize">w-resize</div>
+      <div class="ns-resize">ns-resize</div>
+      <div class="ew-resize">ew-resize</div>
+      <div class="ne-resize">ne-resize</div>
+      <div class="nw-resize">nw-resize</div>
+      <div class="se-resize">se-resize</div>
+      <div class="sw-resize">sw-resize</div>
+      <div class="nesw-resize">nesw-resize</div>
+      <div class="nwse-resize">nwse-resize</div>
+    </div>
+  </body>
+</html>
