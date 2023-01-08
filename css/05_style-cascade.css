@@ -1,0 +1,121 @@
+p {
+  color: blue;
+  background-color: oldlace;
+}
+
+p {
+  color: teal;
+}
+
+/* ------------------------------------ */
+
+/* Rank 4 selectors */
+
+/* Specificity - 0 0 0 1 */
+p {
+  color: green;
+}
+
+/* ✅ Specificity - 0 0 0 2 */
+article > p {
+  color: orange;
+}
+
+/* ------------------------------------ */
+
+/* Rank 3 selectors */
+
+/* Specificity - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+
+/* Specificity - 0 0 1 1 */
+.post > h1 {
+  color: red;
+}
+
+/* ✅ Specificity - 0 0 2 0 */
+.post > .post-title {
+  color: orange;
+}
+
+/* Specificity - 0 0 0 1 */
+a {
+  color: green;
+}
+
+/* Specificity - 0 0 1 0 */
+.post-link {
+  color: orange;
+}
+
+/* Specificity - 0 0 1 1 */
+a.post-link {
+  color: blue;
+}
+
+/* Specificity - 0 0 2 0 */
+.post > .post-link {
+  color: red;
+}
+
+/* Specificity - 0 0 2 1 */
+.post > a.post-link {
+  color: brown;
+}
+
+/* ------------------------------------ */
+
+/* Rank 2 selectors */
+
+/* Specificity - 0 0 1 0 */
+.post-title {
+  color: green;
+}
+
+/* Specificity - 0 1 0 0 */
+#title {
+  color: orange;
+}
+
+/* ------------------------------------ */
+
+/* Same specificity */
+
+/* Three selectors with same specificity */
+a {
+  color: teal;
+}
+
+a {
+  color: brown;
+}
+
+/* Since this rule is lower, orange text color will be applied to all links */
+a {
+  color: orange;
+}
+
+/* ------------------------------------ */
+
+/* Avoiding Specificity */
+.post {
+  /* Post styles */
+}
+
+.post > h1 {
+  /* Title styles */
+}
+
+.post > p {
+  /* Text styles */
+}
+
+.post > a {
+  /* Link styles */
+}
+
+.post > a:hover {
+  /* Link styles at hover */
+}
