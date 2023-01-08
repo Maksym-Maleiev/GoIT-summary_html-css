@@ -6,10 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Style cascade</title>
     <link rel="stylesheet" href="./css/main-styles.css" />
+    <link rel="stylesheet" href="./css/05_style-cascade.css" />
   </head>
   <body>
     <a href="./main.html">Back to main</a>
 
     <h1>Style cascade</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit ducimus
+      repellat numquam facere eveniet, mollitia, dignissimos expedita et optio
+      eum nihil architecto non alias aperiam nisi? Culpa, ex sit?
+    </p>
+
+    <h2>Selector specificity</h2>
+
+    <img
+      src="./images/specificity.svg"
+      alt="selector specificity"
+      width="600"
+    />
+
+    <h2>Rank 4 selectors</h2>
+
+    <!-- Example  -->
+    <article>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+        accusantium sit fugit illum assumenda, beatae natus vel vitae animi
+        delectus.
+      </p>
+      <a href="">Lorem ipsum dolor sit.</a>
+    </article>
+
+    <h2>Rank 3 selectors</h2>
+
+    <!-- Example  -->
+    <article class="post">
+      <h1 class="post-title">Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+        accusantium sit fugit illum assumenda, beatae natus vel vitae animi
+        delectus.
+      </p>
+      <a href="" class="post-link">Lorem ipsum dolor sit.</a>
+    </article>
+
+    <h2>Rank 2 selectors</h2>
+
+    <!-- Example  -->
+    <article class="post">
+      <h1 class="post-title" id="title">Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+        accusantium sit fugit illum assumenda, beatae natus vel vitae animi
+        delectus.
+      </p>
+      <a href="" class="post-link">Lorem ipsum dolor sit.</a>
+    </article>
+
+    <h2>Rank 1 selectors</h2>
+
+    <!-- Example  -->
+
+    <!-- Specificity - 1 0 0 0 -->
+    <p style="color: green">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+      accusantium sit fugit illum assumenda, beatae natus vel vitae animi
+      delectus.
+    </p>
+
+    <h2>Same specificity</h2>
+
+    <a href="https://google.com" target="_blank" title="Google">Google.com</a>
+
+    <h2>Avoiding Specificity</h2>
+
+    <!-- Example -->
+    <article class="post">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+        accusantium sit fugit illum assumenda, beatae natus vel vitae animi
+        delectus.
+      </p>
+      <a href="">Lorem ipsum dolor sit.</a>
+    </article>
   </body>
 </html>
