@@ -164,6 +164,8 @@ a {
   /* Link styles at hover */
 }
 
+/* ------------------------------------ */
+
 /* Keyword !important */
 p {
   color: orange !important;
@@ -173,10 +175,14 @@ p#text-id.text {
   color: blue;
 }
 
+/* ------------------------------------ */
+
 /* Property inheritance */
 .post-item {
   color: green;
 }
+
+/* ------------------------------------ */
 
 /* Exceptions */
 
@@ -187,6 +193,8 @@ p#text-id.text {
 .post-link {
   color: inherit;
 }
+
+/* ------------------------------------ */
 
 /* Page text color */
 
