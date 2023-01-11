@@ -1,0 +1,94 @@
+.section {
+  /* Other styles */
+  border: 2px solid #3f51b5;
+}
+
+.section-title {
+  /* Other styles */
+  color: #3f51b5;
+}
+
+.section-title::before {
+  /* Other srtles */
+  background-color: #3f51b5;
+}
+
+/* ----------------------------------- */
+
+/* Variable declaration */
+
+:root {
+  --brand-color: #3f51b5;
+}
+
+/* ----------------------------------- */
+
+/* Using variable */
+
+.section {
+  border: 2px solid var(--brand-color);
+}
+
+.section-title {
+  color: var(--brand-color);
+}
+
+.section-title::before {
+  background-color: var(--brand-color);
+}
+
+/* ----------------------------------- */
+
+/* Reserve values */
+
+.section {
+  border: 2px solid var(--brand-color, orange);
+}
+
+.section-title {
+  color: var(--brand-color, black);
+}
+
+.section-title::before {
+  background-color: var(--brand-color, tomato);
+}
+
+/* ----------------------------------- */
+
+/* Area of ​​visibility */
+
+.alert {
+  --alert-text-color: black;
+  --alert-accent-color: tomato;
+}
+
+.alert-text {
+  color: var(--alert-text-color);
+  border: 1px solid var(--alert-accent-color);
+}
+
+.alert-icon {
+  background-color: var(--alert-accent-color);
+}
+
+/* ----------------------------------- */
+
+/* Redefining values */
+
+.alert {
+  --alert-text-color: black;
+
+  color: var(--alert-text-color);
+}
+
+.alert.success {
+  --alert-text-color: green;
+}
+
+.alert.warning {
+  --alert-text-color: orange;
+}
+
+.alert.error {
+  --alert-text-color: red;
+}
