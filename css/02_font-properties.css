@@ -1,0 +1,27 @@
+/* font-size */
+
+.text {
+  font-size: 20px;
+}
+
+/* font-weight */
+
+.title {
+  font-weight: 400;
+}
+
+.text.fw {
+  font-weight: 700;
+}
+
+/* font-style */
+
+.title.fs {
+  font-style: italic;
+}
+
+/* font-family */
+
+.ff {
+  font-family: 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+}
