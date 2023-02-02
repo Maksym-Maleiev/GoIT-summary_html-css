@@ -21,12 +21,38 @@
       the element type.
     </p>
 
-    <h2>Property <span>with</span> and <span>height</span></h2>
+    <h2>Property <code>with</code> and <code>height</code></h2>
 
     <!-- Example -->
 
     <div class="box"></div>
 
-    <h2>Property <span>box-sizing</span></h2>
+    <h2>Property <code>box-sizing</code></h2>
+
+    <h3>Meaning <code>content-box</code></h3>
+
+    <!-- Example -->
+
+    <div class="content-box"></div>
+
+    <h3>Meaning <code>border-box</code></h3>
+
+    <!-- Example -->
+
+    <div class="border-box"></div>
+
+    <h3>Global <code>border-box</code></h3>
+
+    <!-- Example -->
+
+    <code>
+      *,<br />
+      *::before,<br />
+      *::after {<br />
+      box-sizing: border-box;<br />
+      }
+    </code>
+
+    <h2>Style normalization</h2>
   </body>
 </html>
