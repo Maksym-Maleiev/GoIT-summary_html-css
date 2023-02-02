@@ -1,0 +1,36 @@
+.excerpt {
+  /* Sets the border */
+  border: 2px dashed #2196f3;
+
+  /* Adds an inner padding */
+  padding: 15px;
+
+  /* Sets outer margins */
+  margin: 20px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Property width and height */
+
+.box {
+  /* Control the overall width
+      and element height or only
+      the size of its content area */
+  width: 150px;
+  height: 150px;
+
+  /* Sets the border */
+  border: 5px solid #f44336;
+
+  /* Adds an inner padding */
+  padding: 30px;
+
+  /* Sets outer margins */
+  margin: 80px;
+
+  background-color: #ffeb3b;
+}
