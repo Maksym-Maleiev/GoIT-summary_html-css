@@ -1,3 +1,7 @@
+.thumb {
+  max-width: 480px;
+}
+
 /* Property padding */
 
 *,
@@ -57,4 +61,105 @@ img {
   margin-top: 0;
 
   border: 2px dashed blue;
+}
+
+/* Collapsing vertical margins */
+
+.box {
+  width: 200px;
+  height: 100px;
+}
+
+.top {
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+.bottom {
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Loss of vertical margins */
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+.inner-box {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  background-color: palevioletred;
+}
+
+/* Border */
+
+.border {
+  width: 150px;
+  height: 150px;
+  border: 5px solid tomato;
+}
+
+/* Individual frames */
+
+.indiv-frames {
+  width: 150px;
+  height: 150px;
+
+  /* Set top border styles */
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: blue;
+
+  /* Set right border styles */
+  border-right-width: 5px;
+  border-right-style: dotted;
+  border-right-color: black;
+
+  /* Set bottom border styles */
+  border-bottom-width: 7px;
+  border-bottom-style: dashed;
+  border-bottom-color: palevioletred;
+
+  /* Set left border styles */
+  border-left-width: 9px;
+  border-left-style: dashed;
+  border-left-color: green;
+}
+
+/* Rounded frame */
+
+.box-1 {
+  width: 180px;
+  height: 80px;
+  background-color: #f44336;
+
+  /*  The value can be pixels  */
+  border-radius: 10px;
+}
+
+.box-2 {
+  width: 120px;
+  height: 120px;
+  background-color: #2196f3;
+
+  /*  The value can be percent  */
+  border-radius: 20%;
+}
+
+.box-3 {
+  width: 150px;
+  height: 150px;
+  background-color: #4caf50;
+
+  /*  If the block is a square, settings the radius to 50% will transform it to a circle  */
+  border-radius: 50%;
+}
+
+.box-1,
+.box-2 {
+  margin-bottom: 20px;
 }
