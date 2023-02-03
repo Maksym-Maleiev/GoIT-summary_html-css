@@ -2,11 +2,11 @@ code {
   background-color: #eee;
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 .thumb {
   max-width: 480px;
