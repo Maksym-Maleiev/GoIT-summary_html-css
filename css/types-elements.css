@@ -149,3 +149,91 @@ p {
 .page-footer {
   background-color: #90a4ae;
 }
+
+h1,
+h2,
+h3 {
+  color: #2a2a2a;
+}
+/* inline elements */
+
+.link {
+  margin-right: 20px;
+}
+
+.link-1 {
+  background-color: red;
+}
+
+.link-2 {
+  background-color: orange;
+}
+
+.link-3 {
+  background-color: yellow;
+}
+
+.link-4 {
+  background-color: green;
+}
+
+.link-5 {
+  background-color: blue;
+}
+
+.link-6 {
+  background-color: palevioletred;
+}
+
+.link-7 {
+  background-color: purple;
+}
+
+.link-ex {
+  background-color: tomato;
+  color: white;
+
+  /* ✅ Works */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  /* ❌ No effect */
+  width: 1000px;
+  height: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* gap for inline elements */
+
+.card {
+  max-width: 320px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f44336;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image.no-gap {
+  display: block;
+}
+
+.card-heading {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+}
