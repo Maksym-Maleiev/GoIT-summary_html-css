@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #f9f9fd;
+}
+
+.pane {
+  display: none;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+}
+
+.controls a {
+  padding: 4px 8px;
+}
