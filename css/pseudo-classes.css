@@ -1,0 +1,101 @@
+/* :first-child and :last-child */
+
+/* .list-item {
+  margin-bottom: 12px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+} */
+
+/* .list-item {
+  margin-top: 12px;
+}
+
+.list-item:first-child {
+  margin-top: 0;
+} */
+
+/* ----------------------------------- */
+
+/* Pseudo-class :not(selector) */
+
+/* .list-item:not(:last-child) {
+  margin-bottom: 12px;
+} */
+
+/* ----------------------------------- */
+
+/* Pseudo-class :nth-child(an+b) */
+
+/* .list-item:nth-child(2n + 1) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Nth element */
+
+/* .list-item:nth-child(5) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Even and odd elements */
+
+/* .list-item:nth-child(2n) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(even) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(2n + 1) {
+  background-color: orange;
+} */
+
+/* .list-item:nth-child(odd) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* From the Nth element */
+
+/* .list-item:nth-child(n + 6) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Up to Nth element */
+
+/* .list-item:nth-child(-n + 5) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Every Nth element */
+
+/* .list-item:nth-child(3n + 1) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Pseudo-class :nth-last-child(an+b) */
+
+/* .list-item:nth-last-child(3) {
+  background-color: orange;
+} */
+
+/* ----------------------------------- */
+
+/* Up to Nth element */
+
+.list-item:nth-last-child(-n + 3) {
+  background-color: orange;
+}
