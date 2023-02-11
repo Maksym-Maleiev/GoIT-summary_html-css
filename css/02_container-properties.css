@@ -1,0 +1,203 @@
+/* Property display */
+
+body {
+  background-color: #f9f9f9;
+}
+
+.menu {
+  padding: 10px;
+  margin: 0;
+
+  background-color: #2196f3;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  list-style: none;
+
+  /*  Making ul.menu a Flex container  */
+  display: flex;
+}
+
+.menu > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu .link {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+/* Property <cflex-direction */
+
+.menu.reversed {
+  /*  We rotate the main axis from right to left  */
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.menu.reversed > .item:not(:last-child) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Property justify-content */
+
+.subtitle {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu.flex-start,
+.menu.flex-end,
+.menu.center,
+.menu.space-between {
+  margin-bottom: 20px;
+}
+
+.menu.flex-end {
+  justify-content: flex-end;
+}
+
+.menu.center {
+  justify-content: center;
+}
+
+.menu.space-between {
+  justify-content: space-between;
+}
+
+/* Property align-items */
+
+.page-header {
+  /*  Making header.page-header a Flex-container and aligning elements  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  border-radius: 4px;
+  background-color: #607d8b;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.site-nav {
+  display: flex;
+  padding: 15px;
+  margin: 0;
+
+  background-color: #2196f3;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.site-nav .link {
+  display: block;
+  padding: 10px;
+
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.logo {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+
+/* Picture card */
+
+.card {
+  display: flex;
+  width: 640px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card.flex-start-aligned {
+  align-items: flex-start;
+}
+
+.content {
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+/* Element Grid */
+
+.container {
+  max-width: 1000px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-set {
+  display: flex;
+  /* Make a flex container multiline */
+  flex-wrap: wrap;
+  /* Set gap between rows and columns */
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.card-set > .item {
+  /*  Set the width of the elements  */
+  flex-basis: calc((100% - 20px) / 3);
+
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.item h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.item p {
+  margin: 0;
+}
