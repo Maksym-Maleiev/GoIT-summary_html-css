@@ -1,0 +1,223 @@
+/* BACKGROND-IMAGE */
+
+/* .tile-set {
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  padding: 10px;
+  text-align: center;
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+}
+
+.tile:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon {
+  display: inline-flex;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon.with-bg {
+  background-color: #ff9800;
+}
+
+.icon.with-icon {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/avatars-60/5985/34-Father-512.png");
+} */
+
+/* BACKGROUND-REPEAT */
+
+/* .container {
+  width: 960px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tile-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+.tile {
+  position: relative;
+  height: 120px;
+  margin-left: 40px;
+  margin-top: 40px;
+  flex-basis: calc(100% / 2 - 40px);
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  background-color: #fff;
+
+  background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+  background-size: 40px;
+}
+
+.tile::before {
+  position: absolute;
+  top: -32px;
+  width: 100%;
+  content: "";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.no-repeat::before {
+  content: "no-repeat";
+  font-family: monospace;
+}
+.repeat-x {
+  background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+  content: "repeat-x";
+}
+
+.repeat-y {
+  background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+  content: "repeat-y";
+}
+
+.repeat {
+  background-repeat: repeat;
+}
+
+.repeat::before {
+  content: "repeat";
+} */
+
+/* BACKGROUND-SIZE */
+
+:root {
+  --wrapper-width: 480px;
+  --add-to-content: 50px;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  height: var(--wrapper-width);
+  line-height: var(--wrapper-width);
+  margin: auto;
+  background: #fff url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat center;
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.controls {
+  width: var(--wrapper-width);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 20px;
+  padding: 8px 30px;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.label {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* BACKGROUND-ATTACHMENT */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.box {
+  width: 150px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: #2196f3;
+}
+
+.box:nth-child(2) {
+  background-color: #4caf50;
+}
+
+.box:nth-child(3) {
+  background-color: #ff9800;
+}
+
+.box:nth-child(4) {
+  background-color: #e91e63;
+}
+
+/* LAYERED BACKGROUND */
+
+.canvas {
+  max-width: 1000px;
+  height: 400px;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+    url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+    url("https://cdn-icons-png.flaticon.com/512/814/814513.png"),
+    url("https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/256/61.webp"),
+    url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 80px, 100px, 150px, 130px, cover;
+  background-position: top 120px right 130px, top 270px left 130px, center,
+    100px 60px, center;
+}
