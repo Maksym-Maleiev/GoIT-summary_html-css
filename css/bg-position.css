@@ -1,0 +1,62 @@
+:root {
+  --wrapper-width: 320px;
+  --wrapper-height: var(--wrapper-width);
+  --dot-width: 16px;
+  --orange: #e74200;
+  --bg-color: #6d6562;
+  --wr-color: #277553;
+  --wr-light-color: #078951;
+  --wr-dark-color: #3b6050;
+  --accent-bg: #b6006e;
+  --accent-color: #000;
+  --item-bg: #fff;
+  --flex-container: #c8400a;
+  --flex-container-semi: #aa5939;
+  --flex-container-dark: #8c6556;
+  --black-alfa2: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.2);
+  --black-alfa1: 1px 1px 2px 2px hsla(0, 0%, 0%, 0.1);
+  --black-text-alfa2: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+  --black-text-alfa1: 1px 1px 2px hsla(0, 0%, 0%, 0.1);
+  --ss: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  height: var(--wrapper-height);
+  margin: auto;
+  background: var(--wr-color) url("https://image.ibb.co/n0M0cQ/red90x90.jpg")
+    no-repeat;
+  /*   background-position: 50% 50%; */
+  position: relative;
+}
+
+.controls {
+  width: var(--wrapper-width);
+  height: calc(var(--wrapper-width) / 5);
+  margin: 10px auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: var(--ss);
+}
+
+#h1-x,
+#h1-y {
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--ss);
+  text-align: center;
+}
+
+.dot {
+  width: var(--dot-width);
+  height: var(--dot-width);
+  background: #fff;
+  border-radius: calc(var(--dot-width) / 2);
+  position: absolute;
+  top: calc(var(--dot-width) / -2);
+  left: calc(var(--dot-width) / -2);
+}
