@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element background</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/01_element-bg.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>Element background</h1>
+
+    <ul>
+      <li><a href="#bg-image">Background-image</a></li>
+      <li><a href="#bg-repeat">Background-repeat</a></li>
+      <li><a href="#bg-size">Background-size</a></li>
+      <li><a href="#bg-attachment">Property background-attachment</a></li>
+      <li><a href="#layered-background">Layered background</a></li>
+    </ul>
+
+    <!-- BACKGROUND-IMAGE -->
+
+    <h2 id="bg-image">Background-image</h2>
+
+    <!-- <div class="tile-set">
+      <div class="tile">
+        <p>✅ There is a background and the picture is loaded</p>
+        <span class="icon with-bg with-icon"></span>
+      </div>
+
+      <div class="tile">
+        <p>⚠️ There is a background but the picture is not loaded</p>
+        <span class="icon with-bg"></span>
+      </div>
+
+      <div class="tile">
+        <p>❌ There is no background and the picture is not loaded</p>
+        <span class="icon"></span>
+      </div>
+    </div> -->
+
+    <!-- BACKGROUND-REPEAT -->
+
+    <h2 id="bg-repet">Background-repeat</h2>
+
+    <!-- <div class="container">
+      <div class="tile-set">
+        <div class="tile no-repeat"></div>
+        <div class="tile repeat-x"></div>
+        <div class="tile repeat-y"></div>
+        <div class="tile repeat"></div>
+      </div>
+    </div> -->
+
+    <!-- BACKGROUND-SIZE -->
+
+    <h2 id="bg-size">Background-size</h2>
+
+    <h3>Values <code>contain</code> and <code>cover</code></h3>
+
+    <div class="controls">
+      <button type="button" data-size="auto">Auto</button>
+      <button type="button" data-size="cover">Cover</button>
+      <button type="button" data-size="contain">Contain</button>
+    </div>
+
+    <div class="wrapper">
+      <p class="label">Auto</p>
+    </div>
+
+    <!-- BACKGROUND-ATTACHMENT -->
+
+    <h2 id="bg-attachment">Property <code>background-attachment</code></h2>
+
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- LAYERED BACKGROUND -->
+
+    <h2 id="layered-background">Layered background</h2>
+
+    <div class="canvas"></div>
+
+    <!-- SCRIPT -->
+
+    <script src="./js/bg-size.js"></script>
+  </body>
+</html>
