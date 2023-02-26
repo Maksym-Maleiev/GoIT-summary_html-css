@@ -1,0 +1,62 @@
+/* PROPERTY CONTENT */
+.box::before {
+  content: "This is the text in ::before";
+  font-size: 40px;
+  color: tomato;
+}
+
+.box::after {
+  content: "This is the text in ::before";
+  font-size: 40px;
+  color: teal;
+}
+
+/* PSEUDO CLASS :HOVER */
+
+.site-nav {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.link::before,
+.link::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  color: currentColor;
+}
+
+.link::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+  margin-right: 10px;
+}
+
+.link::after {
+  display: none;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png");
+  margin-left: 10px;
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.link:hover::after {
+  display: block;
+}
