@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/02_svg-document.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>SVG document</h1>
+
+    <img src="./images/icon.svg" alt="" />
+
+    <h2>SVG-viewport</h2>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="400"
+      height="200"
+      style="outline: 2px dashed #2a2a2a"
+    >
+      <circle r="75" cx="50%" cy="50%" fill="tomato" />
+    </svg>
+
+    <h2>SVG-viewBox</h2>
+
+    <div class="controls js-controls">
+      <label>
+        x
+        <input type="range" min="-400" max="400" name="x" />
+      </label>
+
+      <label>
+        y
+        <input type="range" min="-200" max="200" name="y" />
+      </label>
+
+      <label>
+        width
+        <input type="range" min="200" max="800" name="width" />
+      </label>
+
+      <label>
+        height
+        <input type="range" min="100" max="400" name="height" />
+      </label>
+    </div>
+
+    <code class="output js-output"
+      >&lt;svg viewBox="<span data-x>0</span> <span data-y>0</span> <span data-width>0</span>
+      <span data-height>0</span>"&gt;</code
+    >
+
+    <svg
+      class="js-vector"
+      xmlns="http://www.w3.org/2000/svg"
+      width="400"
+      height="200"
+      viewBox="0 0 400 200"
+      style="outline: 2px dashed #2a2a2a"
+    >
+      <circle r="75" cx="50%" cy="50%" fill="tomato" />
+    </svg>
+
+    <!-- Script -->
+    <script src="./js/02_svg-document.js"></script>
+  </body>
+</html>
