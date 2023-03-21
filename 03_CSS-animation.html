@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/03_css-animation.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>CSS-animation</h1>
+
+    <h2>Animation properties</h2>
+
+    <h3>
+      <code>animation-name</code> <br />
+      <code>animation-duration</code> <br />
+      <code>animation-timing-function</code> <br />
+      <code>animation-delay</code> <br />
+      <code>animation-iteration-count</code>
+    </h3>
+
+    <section>
+      <div class="container">
+        <b>The animation starts when hovering over an element</b>
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <!-- Other example -->
+
+    <section>
+      <div class="container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+          alt="Sun"
+          width="300"
+          height="300"
+        />
+      </div>
+    </section>
+
+    <h3><code>animation-direction</code></h3>
+
+    <form class="controls-form">
+      <div class="options">
+        <label>
+          <input type="radio" name="option" value="normal" checked />
+          normal
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="reverse" />
+          reverse
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="alternate" />
+          alternate
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="alternate-reverse" />
+          alternate-reverse
+        </label>
+      </div>
+
+      <button type="submit" name="submit">Start</button>
+    </form>
+
+    <div class="canvas">
+      <div class="circle"></div>
+    </div>
+
+    <h3><code>animation-fill-mode</code></h3>
+
+    <section>
+      <div class="container">
+        <b>To replay the animation, you need to reload the page</b>
+
+        <div class="wrapper">
+          <div class="item">none</div>
+          <div class="item">forwards</div>
+          <div class="item">backwards</div>
+          <div class="item">both</div>
+        </div>
+      </div>
+    </section>
+
+    <h3><code>animation-play-state</code></h3>
+
+    <section>
+      <div class="container">
+        <b>Animation pauses when hovering over an element</b>
+        <div class="object"></div>
+      </div>
+    </section>
+
+    <!-- Sprite -->
+    <script src="./js/03_css-animation.js"></script>
+  </body>
+</html>
