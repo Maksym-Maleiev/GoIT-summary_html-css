@@ -236,5 +236,19 @@ img {
 }
 
 .object:hover {
- animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@keyframes changeBgColors {
+  0% {
+    background-color: deeppink;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: deepskyblue;
+  }
 }
