@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated properties</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/02_animated-properties.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>Animated properties</h1>
+
+    <form class="controls-form">
+      <div class="options">
+        <label>
+          <input type="radio" name="option" value="animateMargin" checked />
+          margin-left
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="animateTransform" />
+          transform
+        </label>
+      </div>
+
+      <button type="submit" name="submit">Start</button>
+    </form>
+
+    <div id="root"></div>
+
+    <!-- Script -->
+    <script src="./js/02_animated-properties.js"></script>
+  </body>
+</html>
