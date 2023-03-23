@@ -187,3 +187,9 @@ body {
     transform: perspective(400px) rotateY(-60deg);
   }
 }
+
+/* Property perspective */
+
+.scene {
+  perspective: 400px;
+}
