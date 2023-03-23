@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D transformations</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/05_2D-transformations.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>2D-transformations</h1>
+
+    <h2>Property <code>transform</code></h2>
+
+    <h3>Scale</h3>
+
+    <div class="container">
+      <div class="box">scale(1.25)</div>
+      <div class="box">scale(1)</div>
+      <div class="box">scale(0.75)</div>
+    </div>
+
+    <h3>Rotate</h3>
+
+    <div class="container">
+      <div class="box rotate">rotate(30deg)</div>
+      <div class="box rotate">rotate(115deg)</div>
+      <div class="box rotate">rotate(-45deg)</div>
+    </div>
+
+    <h3>Translate</h3>
+
+    <div class="container">
+      <div class="box translate">translateX(50px)</div>
+      <div class="box translate">translateY(110px)</div>
+      <div class="box translate">translate(-50px,-100px)</div>
+    </div>
+
+    <h3>Centering an element</h3>
+
+    <div class="container">
+      <div class="boxWrapper">
+        <div class="boxIn"></div>
+      </div>
+    </div>
+
+    <h3>Skew</h3>
+
+    <div class="container">
+      <div class="box skew">skewX(30deg)</div>
+      <div class="box skew">skewY(30deg)</div>
+      <div class="box skew">skew(30deg, 30deg)</div>
+    </div>
+
+    <h3>Transformation point</h3>
+
+    <div class="containerIn">
+      <ul class="card-set">
+        <li class="item">top left</li>
+        <li class="item">top center</li>
+        <li class="item">top right</li>
+        <li class="item">center left</li>
+        <li class="item">center center</li>
+        <li class="item">center right</li>
+        <li class="item">bottom left</li>
+        <li class="item">bottom center</li>
+        <li class="item">bottom right</li>
+      </ul>
+    </div>
+  </body>
+</html>
