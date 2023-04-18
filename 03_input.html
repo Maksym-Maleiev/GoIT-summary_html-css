@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;input&gt; element</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/03_input.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1><code>&lt;input&gt;</code> element</h1>
+
+    <input type="text" name="user_name" />
+
+    <h2><code>autofocus</code> attribute</h2>
+
+    <form>
+      <label>
+        Username
+        <input type="text" name="username" autofocus />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2><code>placeholder</code> attribute</h2>
+
+    <form>
+      <label>
+        Username
+        <input type="text" name="usermane" placeholder="Jacob Mercer" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Email and password</h2>
+
+    <form>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" minlength="5" maxlength="12" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Radio-buttons (switches)</h2>
+
+    <form>
+      <p>Choose a color:</p>
+      <label class="label">
+        <input type="radio" name="color" value="red" checked />
+        Red
+      </label>
+      <label class="label">
+        <input type="radio" name="color" value="white" />
+        White
+      </label>
+      <label class="label">
+        <input type="radio" name="color" value="green" />
+        Green
+      </label>
+    </form>
+
+    <h2>Checkboxes</h2>
+
+    <form>
+      <p>What are your hobbies?</p>
+      <label class="label">
+        <input type="checkbox" name="hobby" value="music" checked />
+        Music
+      </label>
+      <label class="label">
+        <input type="checkbox" name="hobby" value="sports" checked />
+        Sports
+      </label>
+      <label class="label">
+        <input type="checkbox" name="hobby" value="reading" />
+        Reading
+      </label>
+    </form>
+
+    <h2>Numbers</h2>
+
+    <label>
+      Age
+      <input type="number" name="age" value="0" min="18" max="120" />
+    </label>
+
+    <form>
+      <label>
+        Weight with 0.1 step value:
+        <input type="number" name="weight" min="0" max="150" step="0.1" value="0" />
+      </label>
+
+      <label>
+        Height with 0.4 step value:
+        <input type="number" name="height" min="0" max="200" step="0.4" value="0" />
+      </label>
+    </form>
+
+    <h2>Phone numbers</h2>
+
+    <form>
+      <label>
+        Phone number
+        <input type="tel" name="phone_number" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Sliders</h2>
+
+    <label class="range">
+      Interest rate:
+      <input type="range" name="interest_rate" value="40" min="0" max="100" step="20" />
+    </label>
+
+    <p>Selected value: <span class="js-selected-value">40</span></p>
+
+    <h2>Date and time</h2>
+
+    <form>
+      <label>
+        Date
+        <input type="date" min="1920-01-01" max="2023-01-01" />
+      </label>
+
+      <label>
+        Time
+        <input type="time" />
+      </label>
+
+      <label>
+        Date and time
+        <input type="datetime-local" min="1920-01-01T00:00" max="2023-01-01T00:00" />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Script -->
+    <script src="./js/03_input.js"></script>
+  </body>
+</html>
