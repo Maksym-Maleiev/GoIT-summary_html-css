@@ -1,0 +1,16 @@
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea {
+  resize: none;
+}
