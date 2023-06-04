@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation attributes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/01_attributes.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>Validation Attributes</h1>
+
+    <h2>Required fields</h2>
+
+    <form action="">
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="mail" required />
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Length limit</h2>
+
+    <form action="">
+      <div class="form-field">
+        <label for="name">Username</label>
+        <input type="text" id="name" name="user-name" required minlength="3" />
+      </div>
+
+      <div class="form-field">
+        <label for="pass">Password</label>
+        <input type="text" id="pass" name="password" required minlength="6" maxlength="12" />
+      </div>
+
+      <button class="button" type="submit">Submit</button>
+    </form>
+
+    <h2>Value constraint</h2>
+
+    <form>
+      <div class="form-field">
+        <label for="number"> How many pizzas do you want to order? </label>
+        <input id="number" type="number" name="amount" required min="1" max="10" />
+      </div>
+      <button class="button" type="submit">Submit</button>
+    </form>
+
+    <h2>Regular expression</h2>
+
+    <form>
+      <div class="form-field">
+        <label for="username">Username</label>
+        <input
+          id="username"
+          type="text"
+          name="text"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="pas">Password</label>
+        <input
+          id="pas"
+          type="password"
+          name="password"
+          required
+          minlength="6"
+          maxlength="12"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
+        />
+      </div>
+
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
