@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <h1>Element</h1>
+
+    <!-- ✅ Logo block with image and label elements -->
+
+    <a href="#" class="logo">
+      <img
+        src=""
+        alt="Technokryak company logo
+"
+        class="logo__image"
+      />
+    </a>
+
+    <!-- ✅ Product block with name, price and link elements -->
+
+    <article class="product">
+      <h1 class="product__name">Fridge</h1>
+      <p class="product__price">Price: 300000</p>
+      <a href="#" class="product__link">View all specifications</a>
+    </article>
+
+    <h2>Nesting</h2>
+
+    <ul class="nav">
+      <li class="nav__item">
+        <a class="nav__link" href="">About us</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="">Contacts</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="">Gallary</a>
+      </li>
+    </ul>
+
+    <article class="product">
+      <div class="product__overlay">
+        <img class="product__image" src="" />
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__name">Fridge</h2>
+        <p class="product__description">Chic refrigerator</p>
+        <a class="product__link" href="#">View all specifications</a>
+
+        <div class="product__meta">
+          <p class="product__price">Price: 30000</p>
+          <p class="product__quantity">Left: 8</p>
+        </div>
+      </div>
+    </article>
+
+    <h2>Optional</h2>
+
+    <!-- Button block with icon and text -->
+    <button class="button" type="button">
+      <svg class="button__icon">...</svg>
+      <span class="button__label">Add to cart</span>
+    </button>
+
+    <!-- Button block with text only -->
+    <button class="button" type="button">
+      <span class="button__label">Add to cart</span>
+    </button>
+
+    <!-- Button block with only icon -->
+    <button class="button" type="button">
+      <svg class="button__icon">...</svg>
+    </button>
+  </body>
+</html>
