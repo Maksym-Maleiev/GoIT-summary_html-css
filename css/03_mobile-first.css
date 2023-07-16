@@ -1,0 +1,146 @@
+/* .container {
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .box:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.box:nth-of-type(1) {
+  background-color: green;
+}
+
+.box:nth-of-type(2) {
+  background-color: blueviolet;
+}
+
+.box:nth-of-type(3) {
+  background-color: orange;
+}
+
+.box:nth-of-type(4) {
+  background-color: blue;
+}
+
+.box:nth-of-type(5) {
+  background-color: navajowhite;
+}
+
+.box:nth-of-type(6) {
+  background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .box {
+    flex-basis: calc(100% / 2 - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .box {
+    flex-basis: calc(100% / 3 - 20px);
+  }
+} */
+
+/* 
+ * Base container and element styles for mobile devices.
+ */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.element {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* 
+ * Override or add new styles for blocks on wider screens.
+ */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 10px) / 2);
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    gap: 15px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+
+.element:nth-of-type(1) {
+  background-color: green;
+}
+
+.element:nth-of-type(2) {
+  background-color: blueviolet;
+}
+
+.element:nth-of-type(3) {
+  background-color: orange;
+}
+
+.element:nth-of-type(4) {
+  background-color: blue;
+}
+
+.element:nth-of-type(5) {
+  background-color: navajowhite;
+}
+
+.element:nth-of-type(6) {
+  background-color: red;
+}
