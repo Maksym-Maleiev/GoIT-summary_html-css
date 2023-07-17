@@ -1,0 +1,170 @@
+// .container {
+//   max-width: 320px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .box {
+//   height: 60px;
+//   color: #fff;
+//   font-size: 24px;
+//   line-height: 60px;
+//   text-align: center;
+
+//   border-radius: 8px;
+// }
+
+// @media screen and (max-width: 767px) {
+//   .box:not(:last-child) {
+//     margin-bottom: 10px;
+//   }
+// }
+
+// .box:nth-of-type(1) {
+//   background-color: green;
+// }
+
+// .box:nth-of-type(2) {
+//   background-color: blueviolet;
+// }
+
+// .box:nth-of-type(3) {
+//   background-color: orange;
+// }
+
+// .box:nth-of-type(4) {
+//   background-color: blue;
+// }
+
+// .box:nth-of-type(5) {
+//   background-color: navajowhite;
+// }
+
+// .box:nth-of-type(6) {
+//   background-color: red;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 768px;
+//   }
+
+//   .list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -20px;
+//     margin-left: -20px;
+//   }
+
+//   .box {
+//     flex-basis: calc(100% / 2 - 20px);
+//     margin-top: 20px;
+//     margin-left: 20px;
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .container {
+//     max-width: 1024px;
+//   }
+
+//   .box {
+//     flex-basis: calc(100% / 3 - 20px);
+//   }
+// }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.element {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* 
+ * Override or add new styles for blocks on wider screens.
+ */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 10px) / 2);
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    gap: 15px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+
+$colors: '#F44336', '#3F51B5', '#4CAF50', '#00BCD4', '#E91E63', '#009688';
+
+@each $color in $colors {
+  $idx: index($colors, $color);
+
+  .element:nth-child(#{$idx}) {
+    background-color: #{$color};
+  }
+}
+
+//  Base container and element styles for mobile devices.
+
+.box {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #3f51b5;
+}
+
+//  Limit border styles to 0-767 pixels.
+
+@media (max-width: 767px) {
+  .box {
+    border: 10px dashed rgba(0, 0, 0, 0.5);
+  }
+}
+
+//  Tablet styles
+
+@media (min-width: 768px) {
+  .box {
+    background-color: #4caf50;
+  }
+}
+
+//  Limit box-shadow styles to 768-1023 pixels.
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box {
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.8);
+  }
+}
+
+//  Desktop styles
+
+@media (min-width: 1024px) {
+  .box {
+    background-color: #ff9800;
+  }
+}
