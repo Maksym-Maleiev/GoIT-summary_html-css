@@ -1,0 +1,18 @@
+/* 1x screens, default value, 320x240 image */
+.box {
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
+  background-image: url("https://picsum.photos/id/237/320/240");
+  background-size: 320px 240px;
+}
+
+/* 2x screens, retina, 640x480 image */
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url("https://picsum.photos/id/237/640/480");
+  }
+}
